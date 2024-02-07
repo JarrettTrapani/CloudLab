@@ -7,7 +7,7 @@ request = portal.context.makeRequestRSpec()
 node = request.RawPC("node")
 node.hardware_type = 'c240g5'
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
-node.routable_control_ip = "true"
+# node.routable_control_ip = "true"
 
 #Install Packages
 node.addService(rspec.Execute(shell="/bin/sh", command="sudo add-apt-repository ppa:graphics-drivers/ppa"))

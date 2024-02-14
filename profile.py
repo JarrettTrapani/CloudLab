@@ -14,6 +14,16 @@ node.addService(rspec.Execute(shell="/bin/sh", command="sudo add-apt-repository 
 node.addService(rspec.Execute(shell="/bin/sh", command="sudo apt update"))
 node.addService(rspec.Execute(shell="/bin/sh", command="sudo apt install -y ubuntu-drivers-common"))
 node.addService(rspec.Execute(shell="/bin/sh", command='sudo apt install -y nvidia-driver-535'))
+node.addService(rspec.Execute(shell="/bin/sh", command='curl -OJL https://raw.githubusercontent.com/JarrettTrapani/CloudLab/main/RamBot.py'))
+node.addService(rspec.Execute(shell="/bin/sh", command='sudo apt install -y python3-pip'))
+node.addService(rspec.Execute(shell="/bin/sh", command='pip install transformers'))
+node.addService(rspec.Execute(shell="/bin/sh", command='pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118'))
+node.addService(rspec.Execute(shell="/bin/sh", command='pip install accelerate'))
+node.addService(rspec.Execute(shell="/bin/sh", command='pip install bitsandbytes'))
+node.addService(rspec.Execute(shell="/bin/sh", command='pip install sentencepiece'))
+node.addService(rspec.Execute(shell="/bin/sh", command='pip install protobuf'))
+node.addService(rspec.Execute(shell="/bin/sh", command='python RamBot.py'))
+
 # node.addService(rspec.Execute(shell="/bin/sh", command='sudo reboot'))
 
 # Print the RSpec to the enclosing page.

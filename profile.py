@@ -22,6 +22,7 @@ node.addService(rspec.Execute(shell="/bin/sh", command='sudo pip install acceler
 node.addService(rspec.Execute(shell="/bin/sh", command='sudo pip install bitsandbytes'))
 node.addService(rspec.Execute(shell="/bin/sh", command='sudo pip install sentencepiece'))
 node.addService(rspec.Execute(shell="/bin/sh", command='sudo pip install protobuf'))
+node.addService(rspec.Execute(shell="/bin/sh", command='sudo cp /local/repository/RamBot.py /users/JTrap'))
 node.addService(rspec.Execute(shell="/bin/sh", command='sudo python RamBot.py'))
 
 # node.addService(rspec.Execute(shell="/bin/sh", command='sudo reboot'))

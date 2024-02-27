@@ -6,7 +6,7 @@ request = portal.context.makeRequestRSpec()
 # Create a XenVM
 node = request.RawPC("node")
 #node.hardware_type = 'c240g5'
-node.hardware_type = 'r7525'
+node.hardware_type = 'ibm8335'
 
 node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 # node.routable_control_ip = "true"

@@ -9,10 +9,10 @@ node = request.RawPC("node")
 node.hardware_type = 'ibm8335'
 
 #disk image for node ibm8335
-node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU20-PPC64LE"
+# node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU20-PPC64LE"
 
 #disk image for all others so far
-#node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
+# node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU22-64-STD"
 # node.routable_control_ip = "true"
 
 #Install Packages

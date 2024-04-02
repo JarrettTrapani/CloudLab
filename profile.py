@@ -5,7 +5,7 @@ import geni.rspec.pg as rspec
 request = portal.context.makeRequestRSpec()
 # Create a XenVM
 node = request.RawPC("node")
-node.hardware_type = 'c4130'
+node.hardware_type = 'd8545'
 # node.hardware_type = 'ibm8335'
 
 #disk image for node ibm8335
